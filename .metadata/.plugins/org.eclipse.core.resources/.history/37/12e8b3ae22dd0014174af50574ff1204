@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Sem3-Ses1">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <property name="context-root" value="Sem3-Ses1"/>
+        <property name="java-output-path" value="/Sem3-Ses1/build/classes"/>
+    </wb-module>
+</project-modules>

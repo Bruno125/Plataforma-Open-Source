@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"><!-- Ese ISO quiere decir Caracteres Latinoamericanos -->
+<title>Título página index</title>
+<style type="text/css">
+	#parrafo1{ font-family: Verdana; font-size: 14px}
+	#parrafo2{ font-family: Arial; font-size: 10px}
+	.colortexto{ color:#ffcc00;}
+	p{ margin: 20px 15px 20px 15px;} <!--Arriba derecha abajo izquierda-->
+</style>
+</head>
+<body>
+	<h1 class="colortexto">Titulo con h1</h1>
+	<p id="parrafo1">Lorem ipsum dolor sit amet, ad diceret cotidieque mea, mel cu omnes <br/> commodo nusquam, ad eos lucilius explicari elaboraret. Simul sanctus principes te mea, eum no justo dolores. Vel ex dicat errem oratio, eos at idque assum minimum. Malis nobis at usu, volumus intellegam vix te.</p>
+	<h2>Titulo con h2</h2>
+	<p id="parrafo2">Eos nobis instructior no, inermis suscipit at nam. Has persequeris suscipiantur no, mei vero debitis admodum eu. Eu vim quot reformidans, ipsum lorem ne mea. Eu veritus ancillae lobortis vim, ei facer labores percipitur mea. At ius malis necessitatibus. Possim delicata eu est.</p>
+	<h3 class="colortexto">Titulo con h3</h3>
+	<ol>
+		<li>Item1</li>
+		<li>
+			Item2
+			<ul>
+				<li>Sub 1
+					<ul>
+						<li>Sub sub 1</li>
+					</ul>
+				</li>
+				<li>Sub 2</li>
+			</ul>
+		</li>
+		
+	</ol>
+	
+	<ul>
+		<li>Aadfs</li>
+		<li>Fdsa</li>
+	</ul>
+	
+</body>
+</html>

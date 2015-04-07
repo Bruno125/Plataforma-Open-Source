@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Página principal</title>
+</head>
+<style type="text/css">
+	.izquierdo{ display: inline-block; width: 10%; background: #e5e5e5; padding: 0px 8px;}
+	.derecho{ width:70%; display: inline-block; }
+	li{ height: 30px }
+	.header_menu{ text-transform: uppercase; font-family: solano_gothic_mvb_stdbold; color:orange; text-align: center;}
+	.header_top{ height: 80px; background: #8BC34A;}
+</style>
+<body>
+	<div class="header_top">Logo</div>
+	<div class="izquierdo">
+		<h2 class="header_menu">Menú</h2>
+		<ul>
+			<li><a href="contacto.html">Contacto</a></li>
+			<li><a href="nosotros.html">Nosotros</a></li>
+			<li><a href="productos.html">Productos</a></li>
+			<li><a href="servicios.html">Servicios</a></li>
+		</ul>
+	</div>
+	<div class="derecho">Vacio</div>
+
+	
+</body>
+</html>

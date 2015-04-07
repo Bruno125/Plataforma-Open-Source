@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>Inicio de sesión</h2>
+	<form action="" method="get" name="">
+		<p>Usuario: <input type="text"/></p>
+		<p>Clave: <input type="text"/></p>
+		<p><input type="submit" value="Inciar sesión"/></p>
+	</form>
+</body>
+</html>

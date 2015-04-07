@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"><!-- Ese ISO quiere decir Caracteres Latinoamericanos -->
+<title>Título página index</title>
+</head>
+<body>
+	<h1>Titulo con h1</h1>
+	<p>
+	Lorem ipsum dolor sit amet, ad diceret cotidieque mea, mel cu omnes <br/> commodo nusquam, ad eos lucilius explicari elaboraret. Simul sanctus principes te mea, eum no justo dolores. Vel ex dicat errem oratio, eos at idque assum minimum. Malis nobis at usu, volumus intellegam vix te.
+	</p>
+	<h2>Titulo con h2</h2>
+	<p>
+	Eos nobis instructior no, inermis suscipit at nam. Has persequeris suscipiantur no, mei vero debitis admodum eu. Eu vim quot reformidans, ipsum lorem ne mea. Eu veritus ancillae lobortis vim, ei facer labores percipitur mea. At ius malis necessitatibus. Possim delicata eu est.
+	</p>
+	<h3>Titulo con h3</h3>
+	<ol>
+		<li>Item1</li>
+		<li>Item2</li>
+	</ol>
+	
+	<ul>
+		<li>Aadfs</li>
+		<li>Fdsa</li>
+	</ul>
+	
+</body>
+</html>
