@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>Registro de usuarios</h2>
+	<form name="" action="" method="post">
+		<p>Correo: <input type="text" name=""/></p>
+		<p>Clave: <input type="password" name=""/></p>
+		<p>Repetir clave: <input type="password"/></p>
+		<p>Sexo
+			<input type="radio" name="" value="m"/>Masculino<br/>
+			<input type="radio" name="" value="f"/>Femenino  
+		</p>
+		<p>Carrera
+			<select name="">
+				<option value="">Ing. Software </option>
+				<option value="">Ing. Sistemas </option>
+				<option value="">Ing. Comunicaciones </option>
+			</select>
+		</p>
+		<p>
+			Intereses <br/>
+			<input type="checkbox" name="" />Noticias <br/>
+			<input type="checkbox" name="" />Deportes <br/>
+			<input type="checkbox" name="" />Entretenimiento <br/>
+		</p>
+		<p>
+			Lenguaje:
+			<select name="" multiple="multiple">
+				<option value="">Inglés</option>
+				<option value="">Español</option>
+				<option value="">Italiano</option>
+			</select>
+		</p>
+		<p>Mensaje: <textarea rows="" cols="" name=""></textarea></p>
+		<p><input type="submit" name="" value="Registrarme"/> </p>
+	</form>
+</body>
+</html>
