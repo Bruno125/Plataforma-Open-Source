@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Noticias</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<h2>Noticias</h2>
+	<ul>
+		<li><a href="noticias?id=1">Noticia 1</a></li>
+		<li><a href="noticias?id=2">Noticia 2</a></li>
+		<li><a href="noticias?id=3">Noticia 3</a></li>
+		<li><a href="noticias?id=4">Noticia 4</a></li>
+		<li><a href="noticias?id=5">Noticia 5</a></li>
+		<li><a href="noticias?id=6">Noticia 6</a></li>
+		<li><a href="noticias?id=7">Noticia 7</a></li>
+		<li><a href="noticias?id=8">Noticia 8</a></li>
+		<li><a href="noticias?id=9">Noticia 9</a></li>
+		<li><a href="noticias?id=10">Noticia 10</a></li>
+		
+		
+	</ul>
+	
+	<div class="row">
+	  	<div class="col-sm-6 col-md-4">
+		    <div class="thumbnail">
+		      <img src="http://static.cinepapaya.es/article/article_638431f46c2f588249c27d4bf9d8ce49_1-jpg_194008_5157.jpg?w=240&h=200&q=100">
+		      <div class="caption">
+		        <h3>Noticia 1</h3>
+		        <p>Nunc pretium felis et volutpat dignissim. Nullam ac ultrices nibh. Sed egestas massa a eros imperdiet, ornare tempor sem tristique.
+		         Aenean eget elit bibendum, mollis turpis a, cursus eros. Ut faucibus accumsan eros. Proin convallis ipsum eget est tincidunt ultricies.
+		          Nullam vitae aliquet turpis. Phasellus ut sem ligula. Morbi dapibus at ante at facilisis.</p>
+		        <p><a href="noticias?id=1" class="btn btn-primary" role="button">Ver detalle</a></p>
+		      </div>
+		    </div>
+	  	</div>
+	  </div>
+	  <div class="row">
+	  	<div class="col-sm-6 col-md-4">
+	  		<div class="thumbnail">
+		      	<img src="http://static.cinepapaya.es/article/article_c55232d9bee41672fc4cf0dcfc9ec959_1-jpg_95313_8349.jpg?w=240&h=200&q=100">
+		      	<div class="caption">
+	        	<h3>Noticia 2</h3>
+	        	<p>Nunc pretium felis et volutpat dignissim. Nullam ac ultrices nibh. Sed egestas massa a eros imperdiet, ornare tempor sem tristique.
+	         	Aenean eget elit bibendum, mollis turpis a, cursus eros. Ut faucibus accumsan eros. Proin convallis ipsum eget est tincidunt ultricies.
+	        	  Nullam vitae aliquet turpis. Phasellus ut sem ligula. Morbi dapibus at ante at facilisis.</p>
+	       		<p><a href="noticias?id=2" class="btn btn-primary" role="button">Ver detalle</a></p>
+	      		</div>
+	    	</div>
+	  	</div>
+	  </div>
+	  <div class="row">
+	  	<div class="col-sm-6 col-md-4">
+	  		<div class="thumbnail">
+		      	<img src="http://static.cinepapaya.es/article/article_7c4a73cbfe8fdcaa2e244ae3e9272403_2-jpg_145959_7829.jpg?w=240&h=000&q=100">
+		      	<div class="caption">
+	        	<h3>Noticia 3</h3>
+	        	<p>Nunc pretium felis et volutpat dignissim. Nullam ac ultrices nibh. Sed egestas massa a eros imperdiet, ornare tempor sem tristique.
+	         	Aenean eget elit bibendum, mollis turpis a, cursus eros. Ut faucibus accumsan eros. Proin convallis ipsum eget est tincidunt ultricies.
+	        	  Nullam vitae aliquet turpis. Phasellus ut sem ligula. Morbi dapibus at ante at facilisis.</p>
+	       		<p><a href="noticias?id=3" class="btn btn-primary" role="button">Ver detalle</a></p>
+	      		</div>
+	    	</div>
+	  	</div>
+	  </div>
+	  
+	  
+</body>
+</html>
