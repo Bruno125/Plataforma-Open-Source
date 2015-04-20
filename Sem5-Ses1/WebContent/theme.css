@@ -1,0 +1,7 @@
+@CHARSET "ISO-8859-1";
+.incorrecto {
+	color:#f00
+}
+.correcto{
+	color: #00f
+}
