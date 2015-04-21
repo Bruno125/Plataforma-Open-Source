@@ -1,0 +1,3 @@
+127.0.0.1 - - [21/Apr/2015:07:25:10 -0500] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [21/Apr/2015:07:25:11 -0500] "GET /Sem5-Ses2/admin/autor_agregar.jsp HTTP/1.1" 200 575
+127.0.0.1 - - [21/Apr/2015:07:26:13 -0500] "POST /Sem5-Ses2/autor_agregar HTTP/1.1" 200 -
