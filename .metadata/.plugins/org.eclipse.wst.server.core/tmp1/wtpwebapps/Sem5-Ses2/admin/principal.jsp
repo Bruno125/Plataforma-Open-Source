@@ -10,7 +10,7 @@
 	<h1>Panel de administración</h1>
 	<ul>
 		<li><a href="autor_agregar.jsp">Agregar autor</a></li>
-		<li><a href="../autor_listar"> Listar autores</a>
+		<li><a href="autor_listar"> Listar autores</a>
 	</ul>
 </body>
 </html>

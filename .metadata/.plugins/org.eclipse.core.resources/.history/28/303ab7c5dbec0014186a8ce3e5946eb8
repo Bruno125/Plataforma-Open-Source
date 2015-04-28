@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>Sistema de administración de librería</h2>
+	<ul>
+		<li><a href="/admin/autor_agregar.jsp">Registro de autores</a></li>
+		<li><a href="/admin/autor_listar">Listar autores</a></li>
+		<li><a href="">Registro de autores</a></li>
+		<li><a href="">Registro libros</a></li>
+		<li><a href="">Listar libros</a></li>
+		<li><a href="">Registrar genero</a>
+		<li><a href="">Listar generos</a></li>
+		<li><a href="">Registro de editoriales</a></li>
+		<li><a href="">Listar editoriales</a></li>
+	</ul>
+</body>
+</html>

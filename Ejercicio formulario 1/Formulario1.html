@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>Formulario 1</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="form1.css">
+    </head>
+    <body>
+        <form>
+            <p>Favor escriba su correo electrónico si desea que lo contactemos.</p>
+            <input type="text" name ="InputCorreo">
+            <p>¿Por cuánto tiempo ha estado asistiendo?</p>
+            <select name="SelectTiempo">
+                <option>De 1 a 5 años</option>
+                <option>De 6 a 10 años</option>
+                <option>De 11 a 20 años</option>
+            </select>
+            <p>¿Cómo podemos mejorar?</p>
+            <textarea name="TxtMejorar">
+            </textarea>
+            <p>¿Qué tan satisfecho estás con los siguientes aspectos?</p    >
+            <table>
+                <tr class="table-header">
+                    <td></td>
+                    <td>Muy insatisfecho</td>
+                    <td>Insatisfecho</td>
+                    <td>Neutro</td>
+                    <td>Satisfecho</td>
+                    <td>Muy satisfecho</td>
+                </tr>
+                
+               <tr>
+                    <td class="first-col">Aspecto 1</td>
+                    <td>
+                        <div><input type="radio" name="asp1" value="1"></div>
+                        <div>1</div>
+                    </td>
+                   <td>
+                        <div><input type="radio" name="asp1" value="1"></div>
+                        <div>2</div>
+                    </td>
+                    <td>
+                        <div><input type="radio" name="asp1" value="1"></div>
+                        <div>3</div>
+                    </td>
+                    <td>
+                        <div><input type="radio" name="asp1" value="1"></div>
+                        <div>4</div>
+                    </td>
+                    <td>
+                        <div><input type="radio" name="asp1" value="1"></div>
+                        <div>5</div>
+                    </td>
+                </tr>
+                <tr class="grey-row">
+                    <td>Aspecto 2</td>
+                    <td>
+                        <div><input type="radio" name="asp2" value="1"></div>
+                        <div>1</div>
+                    </td>
+                   <td>
+                        <div><input type="radio" name="asp2" value="1"></div>
+                        <div>2</div>
+                    </td>
+                    <td>
+                        <div><input type="radio" name="asp2" value="1"></div>
+                        <div>3</div>
+                    </td>
+                    <td>
+                        <div><input type="radio" name="asp2" value="1"></div>
+                        <div>4</div>
+                    </td>
+                    <td>
+                        <div><input type="radio" name="asp2" value="1"></div>
+                        <div>5</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Aspecto 3</td>
+                    <td>
+                        <div><input type="radio" name="asp3" value="1"></div>
+                        <div>1</div>
+                    </td>
+                   <td>
+                        <div><input type="radio" name="asp3" value="1"></div>
+                        <div>2</div>
+                    </td>
+                    <td>
+                        <div><input type="radio" name="asp3" value="1"></div>
+                        <div>3</div>
+                    </td>
+                    <td>
+                        <div><input type="radio" name="asp3" value="1"></div>
+                        <div>4</div>
+                    </td>
+                    <td>
+                        <div><input type="radio" name="asp3" value="1"></div>
+                        <div>5</div>
+                    </td>
+                </tr>
+                <tr class="grey-row">
+                    <td>Aspecto 4</td>
+                    <td>
+                        <div><input type="radio" name="asp4" value="1"></div>
+                        <div>1</div>
+                    </td>
+                   <td>
+                        <div><input type="radio" name="asp4" value="1"></div>
+                        <div>2</div>
+                    </td>
+                    <td>
+                        <div><input type="radio" name="asp4" value="1"></div>
+                        <div>3</div>
+                    </td>
+                    <td>
+                        <div><input type="radio" name="asp4" value="1"></div>
+                        <div>4</div>
+                    </td>
+                    <td>
+                        <div><input type="radio" name="asp4" value="1"></div>
+                        <div>5</div
+                    </td>
+                </tr>
+            </table>
+                
+            <p>¿Asiste tan frecuente como quisiera?</p>
+            <input type="radio" name="asistencia" value="1"> Si <br/>
+            <input type="radio" name="asistencia" value="0"> No <br/>
+                <input type="submit" name="BtnEnviar" value="Enviar"/>
+        </form>
+    </body>
+</html>

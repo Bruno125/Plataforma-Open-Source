@@ -49,7 +49,6 @@ public class ListarAutorServlet extends HttpServlet {
 		} catch (Exception e) {
 			System.out.print("Error: "+e.toString());
 		}
-		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
