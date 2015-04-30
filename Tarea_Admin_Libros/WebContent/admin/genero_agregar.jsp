@@ -4,12 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Registro de género</title>
+<title>Registro de genero</title>
 </head>
 <% String nombre = (String)session.getAttribute("nombre"); %>
 <body>
 	<h1>Bienvenido <%=nombre %></h1>
-	<h2>Registro de Género</h2>
+	<h2>Registro de Genero</h2>
 	<form action="../genero_agregar" method="post">
 		<p>Nombre: <input type="text" name="nombre" /></p>
 		<p>Descripcion: <input type="text" name="descripcion"></p>

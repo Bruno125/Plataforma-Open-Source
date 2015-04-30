@@ -8,7 +8,7 @@
 <title>Edición de autores</title>
 </head>
 <%
-	AutorBean autor = (AutorBean)request.getAttribute("objAutor")
+	AutorBean autor = (AutorBean)request.getAttribute("objAutor");
 	String nombre = (String)session.getAttribute("nombre"); %>
 <body>
 	<h1>Bienvenido <%=nombre %></h1>

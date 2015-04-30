@@ -38,7 +38,7 @@ public class AutorBorrarServlet extends HttpServlet {
 			Connection con = DriverManager.getConnection(url, "root", "root");
 			Statement stmt = con.createStatement();
 			
-			int rows= stmt.executeUpdate("DELETE FROM autor WHERE id=" + codigo);
+			int rows= stmt.executeUpdate("DELETE FROM autor WHERE id_autor=" + codigo);
 			
 			if(rows == 1){
 				request.setAttribute("mensaje", "Se borró al autor correctamente.");

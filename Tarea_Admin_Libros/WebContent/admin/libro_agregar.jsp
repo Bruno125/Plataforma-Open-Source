@@ -26,7 +26,8 @@
 		</select>
 		<p>Editorial*:</p>
 		<select name="editorial">
-		<% for(int i=0;i<editorials.size();i++){%>
+		<% int n = editoriales.size(); 
+			for(int i=0;i<n;i++){%>
 			<option value="<%=editoriales.get(i).getNombre()%>"><%=editoriales.get(i).getNombre()%></option>
 		<% } %>
 		</select>

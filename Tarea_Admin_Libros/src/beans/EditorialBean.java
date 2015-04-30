@@ -12,7 +12,7 @@ public class EditorialBean {
 	public String getNombre() {
 		return nombre;
 	}
-	public void setNombres(String nombres) {
+	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 		

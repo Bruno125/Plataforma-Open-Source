@@ -5,7 +5,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.Vector;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -42,11 +43,11 @@ public class AutorListarServlet extends HttpServlet {
 
 			ResultSet rs = stmt.executeQuery("SELECT * FROM autor");
 			
-			List<AutorBean> autores = new List<AutorBean>();
+			List<AutorBean> autores = new ArrayList<AutorBean>();
 			AutorBean autor = null;
 			while(rs.next()){
 				autor = new AutorBean();
-				autor.setId(rs.getInt("id"));
+				autor.setId(rs.getInt("id_autor"));
 				autor.setNombres(rs.getString("nombres"));
 				autor.setApellidos(rs.getString("apellidos"));
 				autores.add(autor);

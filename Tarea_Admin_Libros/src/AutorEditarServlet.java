@@ -40,11 +40,11 @@ public class AutorEditarServlet extends HttpServlet {
 			String url = "jdbc:mysql://localhost:3306/libreria";
 			Connection con = DriverManager.getConnection(url, "root", "root");
 			Statement stmt = con.createStatement();
-			ResultSet rs = stmt.executeQuery("SELECT * FROM autor WHERE id=" + codigo);
+			ResultSet rs = stmt.executeQuery("SELECT * FROM autor WHERE id_autor=" + codigo);
 			
 			if( rs.next() ){
 				AutorBean autor = new AutorBean();
-				autor.setId( rs.getInt("id") );
+				autor.setId( rs.getInt("id_autor") );
 				autor.setNombres( rs.getString("nombres") );
 				autor.setApellidos( rs.getString("apellidos") );
 				autor.setNacionalidad( rs.getString("nacionalidad") );
@@ -82,7 +82,7 @@ public class AutorEditarServlet extends HttpServlet {
 			int filas = stmt.executeUpdate("update autores "
 				+ " set nombres='" + nombre + "', "
 				+ " apellidos='" + apellido + "', nacionalidad='" + nacionalidad + "' "
-				+ " where id=" + id );
+				+ " where id_autor=" + id );
 			
 			if(filas == 1){
 				request.setAttribute("mensaje", "Datos actualizados");

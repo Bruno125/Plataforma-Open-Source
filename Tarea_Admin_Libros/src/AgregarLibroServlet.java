@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -12,8 +13,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import beans.GeneroBean;
 import beans.EditorialBean;
+import beans.GeneroBean;
 /**
  * Servlet implementation class AgregarLibroServlet
  */
@@ -41,24 +42,24 @@ public class AgregarLibroServlet extends HttpServlet {
 			
 			ResultSet rs = stmt.executeQuery("SELECT * FROM genero");
 	
-			List<GeneroBean> generos = new List<GeneroBean>();
+			List<GeneroBean> generos = new ArrayList<GeneroBean>();
 			
 			GeneroBean genero = null;
 			while(rs.next()){
 				genero = new GeneroBean();
-				genero.setId(rs.getInt("idgenero"));
-				genero.setNombres(rs.getString("nombres"));
+				genero.setId(rs.getInt("id_genero"));
+				genero.setNombre(rs.getString("nombre"));
 				genero.setDescripcion(rs.getString("descripcion"));
 				generos.add(genero);
 			}
 			
 			ResultSet rss = stmt.executeQuery("SELECT * FROM editorial");
-			List<EditorialBean> editorials = new List<EditorialBean>();
+			List<EditorialBean> editorials = new ArrayList<EditorialBean>();
 			EditorialBean editorial = null;
 			while(rss.next()){
 				editorial = new EditorialBean();
-				editorial.setId(rss.getInt("ideditorial"));
-				editorial.setNombres(rss.getString("nombres"));				
+				editorial.setId(rss.getInt("id_editorial"));
+				editorial.setNombre(rss.getString("nombre"));				
 				editorials.add(editorial);
 	
 			}

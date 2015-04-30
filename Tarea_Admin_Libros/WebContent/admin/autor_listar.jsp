@@ -10,9 +10,8 @@
 </head>
 <body>
 	<% 
-		String nombre = (String)session.getAttribute("nombre"); %>
-		List<AutorBean> autores = (List<AutorBean>)request.getAttribute("listaAutores"); 
-	%>
+		String nombre = (String)session.getAttribute("nombre");
+		List<AutorBean> autores = (List<AutorBean>)request.getAttribute("listaAutores");  %>
 
 	<h1>Bienvenido <%=nombre %></h1>
 	<h2>Listado de autores</h2>
@@ -25,7 +24,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			<% for(int i=0; i<autores.size();i++){ %>
+			<%for(int i=0; i<autores.size();i++){ %>
 			<tr>
 				<td><%=autores.get(i).getNombres()%></td>
 				<td><%=autores.get(i).getApellidos()%></td>
