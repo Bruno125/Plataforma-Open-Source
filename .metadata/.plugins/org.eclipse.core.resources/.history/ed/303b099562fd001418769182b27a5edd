@@ -1,0 +1,10 @@
+package servicio;
+
+public class InvocarSaludo {
+	public static void main(String[] args) {
+		SaludosImplService saludos = new SaludosImplService();
+		Saludo saludo = saludos.getSaludosImplPort();
+		
+		System.out.print(saludo.saludo());
+	}
+}

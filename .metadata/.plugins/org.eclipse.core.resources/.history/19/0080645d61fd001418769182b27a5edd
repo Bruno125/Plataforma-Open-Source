@@ -1,0 +1,7 @@
+package servicio;
+
+public class InvocarSaludo {
+	public static void main(String[] args) {
+		Saludos
+	}
+}

@@ -1,0 +1,6 @@
+package servicios;
+
+public interface Calculadora {
+	
+	public double suma(double a, double b);
+}

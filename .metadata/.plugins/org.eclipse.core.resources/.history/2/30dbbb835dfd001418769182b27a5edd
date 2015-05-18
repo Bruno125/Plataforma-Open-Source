@@ -1,0 +1,10 @@
+package servicio;
+
+public class SaludosImpl implements Saludo{
+
+	@Override
+	public String saludo() {
+		return "Saludo desde el servicio web";
+	}
+
+}

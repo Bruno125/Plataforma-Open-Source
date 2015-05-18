@@ -1,0 +1,13 @@
+package servicio;
+
+import javax.jws.WebService;
+
+@WebService(endpointInterface="servicios.Saludo")
+public class SaludosImpl implements Saludo{
+
+	@Override
+	public String saludo() {
+		return "Saludo desde el servicio web";
+	}
+
+}

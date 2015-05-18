@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Sem9-Ses1-Axis">
+        <property name="context-root" value="Sem9-Ses1-Axis"/>
+        <property name="java-output-path" value="/Sem9-Ses1-Axis/build/classes"/>
+    </wb-module>
+</project-modules>
