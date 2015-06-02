@@ -1,0 +1,37 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from PersonaReniecService WSDL service -->
+
+  <service name="PersonaReniec" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://service"/>
+      <parameter name="wsdlServiceElement" value="PersonaReniecService"/>
+      <parameter name="schemaQualified" value="http://beans,http://service"/>
+      <parameter name="wsdlServicePort" value="PersonaReniec"/>
+      <parameter name="className" value="service.PersonaReniecSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="PersonaReniec"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="consultarDNI" qname="operNS:consultarDNI" xmlns:operNS="http://service" returnQName="retNS:consultarDNIReturn" xmlns:retNS="http://service" returnType="rtns:PersonaBean" xmlns:rtns="http://beans" soapAction="" >
+        <parameter qname="pns:dni" xmlns:pns="http://service" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="consultarDNI"/>
+
+      <typeMapping
+        xmlns:ns="http://beans"
+        qname="ns:PersonaBean"
+        type="java:beans.PersonaBean"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+  </service>
+</deployment>
