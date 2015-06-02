@@ -1,6 +1,0 @@
-package entities;
-
-public class Autor {
-	public String nombres;
-	public String apellidos;
-}

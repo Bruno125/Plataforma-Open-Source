@@ -1,0 +1,88 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>miempresa</groupId>
+  <artifactId>semana11-2</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>semana11-2</name>
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<github.global.server>github</github.global.server>
+  </properties>
+  
+  <build>
+	<plugins>
+	<plugin>
+		<artifactId>maven-deploy-plugin</artifactId>         
+		<version>2.8.1</version>
+		<configuration>
+		<altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
+		</configuration>
+	</plugin>
+	<plugin>
+		<groupId>com.github.github</groupId>
+		<artifactId>site-maven-plugin</artifactId>
+		<version>0.12</version>
+		<configuration>
+		<message>Maven artifacts for ${project.version}</message>
+		<noJekyll>true</noJekyll>
+		<outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
+		<branch>refs/heads/mvn-repo</branch>
+		<includes><include>**/*</include></includes>
+		<repositoryName>Plataforma-Open-Source</repositoryName>
+		<repositoryOwner>Bruno125</repositoryOwner>
+		</configuration>
+		<executions><execution><goals><goal>site</goal></goals><phase>deploy</phase></execution></executions>
+	</plugin>
+
+	
+	
+	</plugins>
+  </build>
+  
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <licenses>
+	<license>
+		<name>Apache License, Version 2.0</name>
+		<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		<comments>Comentarios para la licencia...</comments>
+	</license>
+  </licenses>
+
+
+  <organization>
+     	<name>Mi Empresa</name>
+	<url>http://www.miempresa.com</url>
+  </organization>
+
+  <developers>
+	<developer>
+		<id>007</id>
+		<name>Bruno Aybar</name>
+		<roles>
+			<role>Admin BD</role>
+			<role>Desarrollador web</role>
+		</roles>
+	</developer>
+	<developer>
+		<id>002</id>
+		<name>Juanito Perez</name>
+		<roles>
+			<role>Analista funcional</role>
+		</roles>
+	</developer>
+  </developers>
+
+
+</project>

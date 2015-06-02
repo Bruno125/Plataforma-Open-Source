@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="Sem9-Ses2-WS">
-        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="java-output-path" value="/Sem9-Ses2-WS/build/classes"/>
-        <property name="context-root" value="Sem9-Ses2-WS"/>
-    </wb-module>
-</project-modules>
