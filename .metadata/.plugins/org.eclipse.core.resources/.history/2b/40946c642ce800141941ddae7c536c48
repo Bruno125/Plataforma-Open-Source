@@ -1,7 +1,0 @@
-package entities;
-
-public class Autor {
-	public int idAutor;
-	public String nombres;
-	public String apellidos;
-}
