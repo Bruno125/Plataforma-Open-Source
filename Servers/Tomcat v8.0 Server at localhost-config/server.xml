@@ -17,7 +17,11 @@
 --><!-- Note:  A "Server" is not itself a "Container", so you may not
      define subcomponents such as "Valves" at this level.
      Documentation at /docs/config/server.html
+<<<<<<< HEAD
  --><Server port="8005" shutdown="SHUTDOWN">
+=======
+ --><Server port="8006" shutdown="SHUTDOWN">
+>>>>>>> 553136c812a63510d0137eb913e86243a8075aad
   <Listener className="org.apache.catalina.startup.VersionLoggerListener"/>
   <!-- Security listener. Documentation at /docs/config/listeners.html
   <Listener className="org.apache.catalina.security.SecurityListener" />
@@ -60,6 +64,7 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL HTTP/1.1 Connector on port 8080
     -->
+<<<<<<< HEAD
     <Connector connectionTimeout="20000" port="8081" protocol="HTTP/1.1" redirectPort="8443"/>
     <!-- A "Connector" using the shared thread pool-->
     <!--
@@ -81,7 +86,6 @@
 
     <!-- Define an AJP 1.3 Connector on port 8009 -->
     <Connector port="8009" protocol="AJP/1.3" redirectPort="8443"/>
-
 
     <!-- An Engine represents the entry point (within Catalina) that processes
          every request.  The Engine implementation for Tomcat stand alone
@@ -125,6 +129,7 @@
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
       <Context docBase="Sem10-Ses1" path="/Sem10-Ses1" reloadable="true" source="org.eclipse.jst.jee.server:Sem10-Ses1"/><Context docBase="PC2" path="/PC2" reloadable="true" source="org.eclipse.jst.jee.server:PC2"/><Context docBase="PC2Client" path="/PC2Client" reloadable="true" source="org.eclipse.jst.jee.server:PC2Client"/></Host>
+
     </Engine>
   </Service>
 </Server>
