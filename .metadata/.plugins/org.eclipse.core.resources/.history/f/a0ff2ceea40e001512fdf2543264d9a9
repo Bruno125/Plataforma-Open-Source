@@ -1,0 +1,24 @@
+package model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="autor")
+public class Autor {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	@Column(name="idAutor")
+	private int id;
+	@Column(name="Nombres")
+	private String nombres;
+	@Column(name="Apellidos")
+	private String apellidos;
+	@Column(name="Nacionalidad")
+	private String nacionalidad;
+}

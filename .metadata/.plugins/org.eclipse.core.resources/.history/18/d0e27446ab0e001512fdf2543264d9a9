@@ -1,0 +1,40 @@
+package dao.jpa;
+
+import java.util.List;
+
+import model.Autor;
+import dao.AutorDao;
+
+public class AutorJpa implements AutorDao{
+
+	@Override
+	public boolean insert(Autor entity) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean delete(Integer id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Autor obtener() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean update(Autor entity) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Autor> list() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

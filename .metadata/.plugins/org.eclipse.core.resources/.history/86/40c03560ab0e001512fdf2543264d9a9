@@ -1,0 +1,57 @@
+package dao.jpa;
+
+import java.util.List;
+
+import javax.persistence.EntityTransaction;
+
+import model.Autor;
+import dao.AutorDao;
+
+public class AutorJpa extends BaseJpa implements AutorDao{
+
+	@Override
+	public boolean insert(Autor entity) {
+		try{
+			em = obtenerEntityManager();
+			EntityTransaction et = em.getTransaction();
+			et.begin();
+			em.persist(entity);
+			et.commit();
+			return true;
+		}catch(Exception e){
+			System.out.println("Dao: " + e.getMessage());
+		}
+		return false;
+	}
+
+	@Override
+	public boolean delete(Integer id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Autor obtener(Integer id) {
+		try{
+			em = obtenerEntityManager();
+			Autor autor = em.find(Autor.class, id);
+			return autor;
+		}catch(Exception e){
+			System.out.println("AutorJpa read: " + e.getMessage());
+		}
+		return null;
+	}
+
+	@Override
+	public boolean update(Autor entity) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Autor> list() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

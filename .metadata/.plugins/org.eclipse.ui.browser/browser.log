@@ -1,0 +1,26 @@
+
+jun. 09, 2015 09:42:15.15 NEW SESSION
+jun. 09, 2015 09:42:15.15 console.error: 
+jun. 09, 2015 09:42:15.15   Message: [Exception... "Unexpected error"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/actors/highlighter.js :: CanvasFrameAnonymousContentHelper.prototype.destroy :: line 469"  data: no]
+jun. 09, 2015 09:42:15.15   Stack:
+jun. 09, 2015 09:42:15.15     CanvasFrameAnonymousContentHelper.prototype.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/actors/highlighter.js:469:6
+jun. 09, 2015 09:42:15.15 BoxModelHighlighter.prototype<.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/actors/highlighter.js:1006:4
+jun. 09, 2015 09:42:15.15 exports.HighlighterActor<._destroyHighlighter@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/actors/highlighter.js:153:6
+jun. 09, 2015 09:42:15.15 exports.HighlighterActor<.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/actors/highlighter.js:173:4
+jun. 09, 2015 09:42:15.15 Pool<.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/protocol.js:813:8
+jun. 09, 2015 09:42:15.15 Actor<.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/protocol.js:885:4
+jun. 09, 2015 09:42:15.15 Pool<.cleanup@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/protocol.js:827:4
+jun. 09, 2015 09:42:15.15 DSC_onClosed/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/main.js:1549:39
+jun. 09, 2015 09:42:15.15 DSC_onClosed@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/main.js:1549:4
+jun. 09, 2015 09:42:15.15 LocalDebuggerTransport.prototype.close@resource://gre/modules/devtools/dbg-client.jsm -> resource://gre/modules/devtools/transport/transport.js:658:8
+jun. 09, 2015 09:42:15.15 LocalDebuggerTransport.prototype.close@resource://gre/modules/devtools/dbg-client.jsm -> resource://gre/modules/devtools/transport/transport.js:654:6
+jun. 09, 2015 09:42:15.15 DebuggerClient.prototype.close/detachClients@resource://gre/modules/devtools/dbg-client.jsm:442:8
+jun. 09, 2015 09:42:15.15 DebuggerClient.requester/</<@resource://gre/modules/devtools/dbg-client.jsm:352:8
+jun. 09, 2015 09:42:15.15 makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/DevToolsUtils.js:82:13
+jun. 09, 2015 09:42:15.15 emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:97:8
+jun. 09, 2015 09:42:15.15 Request.prototype.emit@resource://gre/modules/devtools/dbg-client.jsm:1185:28
+jun. 09, 2015 09:42:15.15 DebuggerClient.prototype.onPacket@resource://gre/modules/devtools/dbg-client.jsm:1002:6
+jun. 09, 2015 09:42:15.15 LocalDebuggerTransport.prototype.send/<@resource://gre/modules/devtools/dbg-client.jsm -> resource://gre/modules/devtools/transport/transport.js:561:10
+jun. 09, 2015 09:42:15.15 makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/DevToolsUtils.js:82:13
+jun. 09, 2015 09:42:15.15 makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/DevToolsUtils.js:82:13
+jun. 09, 2015 09:42:15.15 
